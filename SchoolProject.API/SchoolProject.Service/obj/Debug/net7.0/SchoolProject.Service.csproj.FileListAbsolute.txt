@@ -1,0 +1,17 @@
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Service.deps.json
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Service.dll
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Service.pdb
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Data.dll
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Infrastructure.dll
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Data.pdb
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Infrastructure.pdb
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.csproj.AssemblyReference.cache
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.AssemblyInfoInputs.cache
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.AssemblyInfo.cs
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.csproj.CoreCompileInputs.cache
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.csproj.CopyComplete
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.dll
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\refint\SchoolProject.Service.dll
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.pdb
+E:\My_GitHub\SchoolProject.API\SchoolProject.Service\obj\Debug\net7.0\ref\SchoolProject.Service.dll

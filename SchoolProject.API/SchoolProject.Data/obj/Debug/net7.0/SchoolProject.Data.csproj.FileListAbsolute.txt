@@ -10,3 +10,15 @@ E:\My_GitHub\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject
 E:\My_GitHub\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\refint\SchoolProject.Data.dll
 E:\My_GitHub\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.pdb
 E:\My_GitHub\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\ref\SchoolProject.Data.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\bin\Debug\net7.0\SchoolProject.Data.deps.json
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\bin\Debug\net7.0\SchoolProject.Data.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\bin\Debug\net7.0\SchoolProject.Data.pdb
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.csproj.AssemblyReference.cache
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.AssemblyInfoInputs.cache
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.AssemblyInfo.cs
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.csproj.CoreCompileInputs.cache
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\refint\SchoolProject.Data.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.pdb
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Data\obj\Debug\net7.0\ref\SchoolProject.Data.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IOSbycE0BScd63dFdQDtf4O0MOJE8GzizxAXNZv+5fXVHINM/7NTsV9Fyis+2PnlMDcUA3URxJ3ZyP2Bnm3aTQ==",
+  "dgSpecHash": "P8HXEaaErV69dC9AyYc2SE5PXPAkP6NJX3GC93qoW7VX/w2VlZsuRMV2Fv3h56TeTGltnzwLjQe1tegHQT8WBw==",
   "success": true,
-  "projectFilePath": "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj",
+  "projectFilePath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\APS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

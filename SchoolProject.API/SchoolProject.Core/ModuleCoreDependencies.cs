@@ -1,24 +1,27 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using SchoolProject.Service.Abstracts;
-using SchoolProject.Service.Impelmantation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using FluentValidation;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using SchoolProject.Core.Behavior;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolProject.Core
 {
     public static class ModuleCoreDependencies
     {
-        public static IServiceCollection AddCoreDependencies(this IServiceCollection Service)
+        public static IServiceCollection AddCoreDependencies(this IServiceCollection services)
         {   // Configuration of mediator
             // The service will be fully operational at the application level or DLL Files
-            Service.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
             //Configuration Of AutoMaper
-            Service.AddAutoMapper(Assembly.GetExecutingAssembly());
-            return Service;
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            // Get Validators
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            // 
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+
+
+            return services;
         }
     }
 }

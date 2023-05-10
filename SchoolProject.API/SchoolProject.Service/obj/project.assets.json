@@ -3220,11 +3220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Service\\SchoolProject.Service.csproj",
+      "projectUniqueName": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Service\\SchoolProject.Service.csproj",
       "projectName": "SchoolProject.Service",
-      "projectPath": "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Service\\SchoolProject.Service.csproj",
+      "projectPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Service\\SchoolProject.Service.csproj",
       "packagesPath": "C:\\Users\\APS\\.nuget\\packages\\",
-      "outputPath": "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Service\\obj\\",
+      "outputPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\APS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3241,11 +3241,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj": {
-              "projectPath": "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj"
+            "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+              "projectPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj"
             },
-            "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj": {
-              "projectPath": "E:\\My_GitHub\\SchoolProject.API\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj"
+            "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj": {
+              "projectPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Infrastructure\\SchoolProject.Infrastructure.csproj"
             }
           }
         }

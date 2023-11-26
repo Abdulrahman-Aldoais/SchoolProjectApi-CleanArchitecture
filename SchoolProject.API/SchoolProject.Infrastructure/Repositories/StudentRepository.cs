@@ -3,15 +3,10 @@ using SchoolProject.Data.Entities;
 using SchoolProject.Infrastructure.Abstracts;
 using SchoolProject.Infrastructure.Context;
 using SchoolProject.Infrastructure.InfrastructuerBase;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolProject.Infrastructure.Repositories
 {
-    public class StudentRepository :GenericRepositoryAsync<Student>, IStudentRepository
+    public class StudentRepository : GenericRepositoryAsync<Student>, IStudentRepository
     {
         #region Fields
         //public ApplicationDbContext _context { get; }
@@ -23,9 +18,9 @@ namespace SchoolProject.Infrastructure.Repositories
         #endregion
 
         #region Constructors
-        public StudentRepository(ApplicationDbContext context):base(context)
+        public StudentRepository(ApplicationDbContext context) : base(context)
         {
-            _studentRepository = context.Set<Student>();  
+            _studentRepository = context.Set<Student>();
         }
 
         #endregion

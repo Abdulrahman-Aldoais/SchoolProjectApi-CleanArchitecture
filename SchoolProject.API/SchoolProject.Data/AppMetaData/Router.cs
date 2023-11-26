@@ -15,6 +15,8 @@
             public const string Create = Perfixe + "/Create";
             public const string Edit = Perfixe + "/Edit";
             public const string Delete = Perfixe + SingleRouteId;
+            public const string Paginated = Perfixe + "/Paginated";
+
 
         }
     }

@@ -6,9 +6,9 @@ namespace SchoolProject.Core.Features.Students.Commands.Models
 {
     public class DeleteStudentCommands : IRequest<Response<string>>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
-        public DeleteStudentCommands(int id)
+        public DeleteStudentCommands(Guid id)
         {
             Id = id;
         }

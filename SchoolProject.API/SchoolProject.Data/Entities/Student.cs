@@ -1,26 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using SchoolProject.Data.Commons;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SchoolProject.Data.Entities
 {
-    public class Student
+    public class Student : GeneralLocalizableEntity
     {
+        [StringLength(100)]
+        public string NameAr { get; set; }
+        [StringLength(100)]
+        public string NameEn { get; set; }
         [Key]
-        public int StudID { get; set; }
-        [StringLength(200)]
-        [Required]
-        public string? Name { get; set; }
-        [StringLength(500)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid StudID { get; set; }
+        [StringLength(300)]
         public string? Address { get; set; }
-        [StringLength(500)]
+        [StringLength(100)]
         public string? Phone { get; set; }
-        public int? DID { get; set; }
-
+        public Guid? DID { get; set; }
         [ForeignKey("DID")]
         public virtual Department Department { get; set; }
     }

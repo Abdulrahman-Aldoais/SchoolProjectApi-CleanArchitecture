@@ -97,6 +97,8 @@ E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Azure.Core.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Azure.Identity.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\FluentValidation.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Humanizer.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\MediatR.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\MediatR.Contracts.dll
@@ -109,6 +111,7 @@ E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
@@ -153,6 +156,8 @@ E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\SchoolProject.Data.pdb
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\SchoolProject.Infrastructure.pdb
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\SchoolProject.Service.pdb
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\ar\SchoolProject.Core.resources.dll
+E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\en\SchoolProject.Core.resources.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\obj\Debug\net7.0\SchoolProject.API.csproj.AssemblyReference.cache
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\obj\Debug\net7.0\SchoolProject.API.GeneratedMSBuildEditorConfig.editorconfig
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\obj\Debug\net7.0\SchoolProject.API.AssemblyInfoInputs.cache
@@ -174,5 +179,3 @@ E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\obj\Debug\net7.0\SchoolProject.API.pdb
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\obj\Debug\net7.0\SchoolProject.API.genruntimeconfig.cache
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\obj\Debug\net7.0\ref\SchoolProject.API.dll
-E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\FluentValidation.dll
-E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

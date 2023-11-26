@@ -12,7 +12,7 @@ using SchoolProject.Infrastructure.Context;
 namespace SchoolProject.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230414221919_new")]
+    [Migration("20231126234748_new")]
     partial class @new
     {
         /// <inheritdoc />
@@ -27,13 +27,16 @@ namespace SchoolProject.Infrastructure.Migrations
 
             modelBuilder.Entity("SchoolProject.Data.Entities.Department", b =>
                 {
-                    b.Property<int>("DID")
+                    b.Property<Guid>("DID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DID"));
+                    b.Property<string>("DNameAr")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("DName")
+                    b.Property<string>("DNameEn")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
@@ -45,17 +48,15 @@ namespace SchoolProject.Infrastructure.Migrations
 
             modelBuilder.Entity("SchoolProject.Data.Entities.DepartmetSubject", b =>
                 {
-                    b.Property<int>("DeptSubID")
+                    b.Property<Guid>("DeptSubID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeptSubID"));
+                    b.Property<Guid>("DID")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("DID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SubID")
-                        .HasColumnType("int");
+                    b.Property<Guid>("SubID")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("DeptSubID");
 
@@ -68,29 +69,30 @@ namespace SchoolProject.Infrastructure.Migrations
 
             modelBuilder.Entity("SchoolProject.Data.Entities.Student", b =>
                 {
-                    b.Property<int>("StudID")
+                    b.Property<Guid>("StudID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudID"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Address")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
-                    b.Property<int?>("DID")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("DID")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("NameAr")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("NameEn")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("StudID");
 
@@ -101,17 +103,15 @@ namespace SchoolProject.Infrastructure.Migrations
 
             modelBuilder.Entity("SchoolProject.Data.Entities.StudentSubject", b =>
                 {
-                    b.Property<int>("StudSubID")
+                    b.Property<Guid>("StudSubID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudSubID"));
+                    b.Property<Guid>("StudID")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("StudID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SubID")
-                        .HasColumnType("int");
+                    b.Property<Guid>("SubID")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("StudSubID");
 
@@ -124,16 +124,19 @@ namespace SchoolProject.Infrastructure.Migrations
 
             modelBuilder.Entity("SchoolProject.Data.Entities.Subject", b =>
                 {
-                    b.Property<int>("SubID")
+                    b.Property<Guid>("SubID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubID"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("Period")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("SubjectName")
+                    b.Property<string>("SubjectNameAr")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("SubjectNameEn")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");

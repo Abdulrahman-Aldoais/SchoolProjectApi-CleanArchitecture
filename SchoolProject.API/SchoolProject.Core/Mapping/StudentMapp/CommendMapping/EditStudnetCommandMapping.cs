@@ -7,6 +7,7 @@ namespace SchoolProject.Core.Features.Mapping.StudentMapp
     {
         public void EditStudnetCommandMapping()
         {
+            // EditStudentCommand => Source   Student=> destination
             CreateMap<EditStudentCommand, Student>()
                            // This fills the DepartmentName present in GetStudentListResponse with the data from virtual Department
                            .ForMember(dest => dest.DID, pot => pot.MapFrom(src => src.DepartmentId))

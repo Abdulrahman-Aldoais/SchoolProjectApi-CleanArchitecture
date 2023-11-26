@@ -17,9 +17,15 @@ namespace SchoolProject.API.Controllers
             //var response = await Mediator.Send(new GetStudentListQuery());
             return NewResult(await Mediator.Send(new GetStudentListQuery()));
         }
+        [HttpGet(Router.StudentRouting.Paginated)]
+        public async Task<IActionResult> Paginted([FromQuery] GetStudentPaginatedListQuery query)
+        {
+            var response = await Mediator.Send(query);
+            return Ok(response);
+        }
 
         [HttpGet(Router.StudentRouting.GetById)]
-        public async Task<IActionResult> GetStudentById([FromRoute] int id)
+        public async Task<IActionResult> GetStudentById([FromRoute] Guid id)
         {
             //var response = await Mediator.Send(new GetStudentByIdQuery(id));
             return NewResult(await Mediator.Send(new GetStudentByIdQuery(id)));
@@ -38,7 +44,7 @@ namespace SchoolProject.API.Controllers
             return NewResult(await Mediator.Send(editStudent));
         }
         [HttpDelete(Router.StudentRouting.Delete)]
-        public async Task<IActionResult> Delet([FromRoute] int id)
+        public async Task<IActionResult> Delet([FromRoute] Guid id)
         {
             return NewResult(await Mediator.Send(new DeleteStudentCommands(id)));
         }

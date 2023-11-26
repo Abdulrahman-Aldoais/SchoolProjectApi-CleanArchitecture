@@ -15,9 +15,9 @@ namespace SchoolProject.Infrastructure.Migrations
                 name: "Departments",
                 columns: table => new
                 {
-                    DID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    DName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false)
+                    DID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DNameAr = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    DNameEn = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -28,9 +28,9 @@ namespace SchoolProject.Infrastructure.Migrations
                 name: "Subjects",
                 columns: table => new
                 {
-                    SubID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    SubjectName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    SubID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SubjectNameAr = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    SubjectNameEn = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     Period = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -42,12 +42,12 @@ namespace SchoolProject.Infrastructure.Migrations
                 name: "Students",
                 columns: table => new
                 {
-                    StudID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    DID = table.Column<int>(type: "int", nullable: true)
+                    StudID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    NameAr = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    NameEn = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: true),
+                    Phone = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    DID = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -63,10 +63,9 @@ namespace SchoolProject.Infrastructure.Migrations
                 name: "DepartmetSubjects",
                 columns: table => new
                 {
-                    DeptSubID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    DID = table.Column<int>(type: "int", nullable: false),
-                    SubID = table.Column<int>(type: "int", nullable: false)
+                    DeptSubID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SubID = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -89,10 +88,9 @@ namespace SchoolProject.Infrastructure.Migrations
                 name: "StudentSubjects",
                 columns: table => new
                 {
-                    StudSubID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    StudID = table.Column<int>(type: "int", nullable: false),
-                    SubID = table.Column<int>(type: "int", nullable: false)
+                    StudSubID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    StudID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SubID = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {

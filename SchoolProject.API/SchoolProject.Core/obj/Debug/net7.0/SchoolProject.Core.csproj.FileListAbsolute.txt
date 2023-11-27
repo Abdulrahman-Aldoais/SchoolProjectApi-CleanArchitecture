@@ -43,3 +43,29 @@ E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\refint\SchoolProject.Core.dll
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.pdb
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\ref\SchoolProject.Core.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.AssemblyReference.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.Resources.SharedResources.ar.resources
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.Resources.SharedResources.en.resources
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.GenerateResource.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.AssemblyInfoInputs.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.AssemblyInfo.cs
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.CoreCompileInputs.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\refint\SchoolProject.Core.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Core.deps.json
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Core.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Core.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\ar\SchoolProject.Core.resources.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\en\SchoolProject.Core.resources.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Data.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Infrastructure.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Service.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Data.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Service.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Infrastructure.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\ar\SchoolProject.Core.resources.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\en\SchoolProject.Core.resources.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.CopyComplete
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Core\obj\Debug\net7.0\ref\SchoolProject.Core.dll

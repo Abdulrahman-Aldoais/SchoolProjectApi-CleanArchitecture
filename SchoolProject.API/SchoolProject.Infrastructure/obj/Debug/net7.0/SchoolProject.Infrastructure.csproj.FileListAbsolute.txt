@@ -32,3 +32,20 @@ E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.pdb
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.genruntimeconfig.cache
 E:\My_GitHub\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\ref\SchoolProject.Infrastructure.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\bin\Debug\net7.0\SchoolProject.Infrastructure.deps.json
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\bin\Debug\net7.0\SchoolProject.Infrastructure.runtimeconfig.json
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\bin\Debug\net7.0\SchoolProject.Infrastructure.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\bin\Debug\net7.0\SchoolProject.Infrastructure.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\bin\Debug\net7.0\SchoolProject.Data.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\bin\Debug\net7.0\SchoolProject.Data.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.csproj.AssemblyReference.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.AssemblyInfoInputs.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.AssemblyInfo.cs
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.csproj.CoreCompileInputs.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.csproj.CopyComplete
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\refint\SchoolProject.Infrastructure.dll
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.pdb
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\SchoolProject.Infrastructure.genruntimeconfig.cache
+E:\My_GitHub\tow project API and UI\SchoolProjectApi-CleanArchitecture\SchoolProject.API\SchoolProject.Infrastructure\obj\Debug\net7.0\ref\SchoolProject.Infrastructure.dll

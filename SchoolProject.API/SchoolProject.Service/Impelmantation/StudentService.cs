@@ -40,9 +40,19 @@ namespace SchoolProject.Service.Impelmantation
 
         public async Task<string> AddStudentAsync(Student student)
         {
-            // Add Student
-            await _studentRepository.AddAsync(student);
-            return "Success";
+            try
+            {
+                // Add Student
+                await _studentRepository.AddAsync(student);
+                return "Success";
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
 
         }
         // Name verification in database

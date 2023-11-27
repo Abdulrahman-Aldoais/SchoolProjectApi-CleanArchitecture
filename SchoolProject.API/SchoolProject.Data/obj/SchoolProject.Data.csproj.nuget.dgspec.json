@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj": {}
+    "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj": {}
   },
   "projects": {
-    "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+    "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj",
+        "projectUniqueName": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj",
         "projectName": "SchoolProject.Data",
-        "projectPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj",
+        "projectPath": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\SchoolProject.Data.csproj",
         "packagesPath": "C:\\Users\\APS\\.nuget\\packages\\",
-        "outputPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\obj\\",
+        "outputPath": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APS\\AppData\\Roaming\\NuGet\\NuGet.Config",

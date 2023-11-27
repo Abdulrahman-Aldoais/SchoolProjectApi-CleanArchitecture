@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\Departments\**" />
+    <EmbeddedResource Remove="Features\Departments\**" />
+    <None Remove="Features\Departments\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SchoolProject.Data\SchoolProject.Data.csproj" />
     <ProjectReference Include="..\SchoolProject.Service\SchoolProject.Service.csproj" />
   </ItemGroup>

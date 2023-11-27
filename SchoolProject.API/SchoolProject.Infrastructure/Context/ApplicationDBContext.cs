@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entities;
+using System.Reflection;
 
 namespace SchoolProject.Infrastructure.Context
 {
@@ -23,6 +24,9 @@ namespace SchoolProject.Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             modelBuilder.Entity<Student>()
                 .HasKey(s => s.StudID);
 

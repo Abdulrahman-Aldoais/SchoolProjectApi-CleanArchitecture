@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Mpc5MZ2ocfp6pJf3e0bsAhl4E+CIoe2cUJuCUKQEVN2wP13A1OaGbdA0QOQgbVQ0wv4agzGdvZDXCKTwmpIQw==",
+  "dgSpecHash": "QXVOwuyoTVWSjsqbZAvqz+vtoeNiWmzwYYeKUTUPUZWA7MAIfguIENOogfhxFaQV+EUHVK7Dr/pdNZj3NQCAtQ==",
   "success": true,
-  "projectFilePath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Core\\SchoolProject.Core.csproj",
+  "projectFilePath": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Core\\SchoolProject.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APS\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\APS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

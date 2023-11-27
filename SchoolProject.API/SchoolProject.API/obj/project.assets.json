@@ -4238,11 +4238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.API\\SchoolProject.API.csproj",
+      "projectUniqueName": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.API\\SchoolProject.API.csproj",
       "projectName": "SchoolProject.API",
-      "projectPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.API\\SchoolProject.API.csproj",
+      "projectPath": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.API\\SchoolProject.API.csproj",
       "packagesPath": "C:\\Users\\APS\\.nuget\\packages\\",
-      "outputPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.API\\obj\\",
+      "outputPath": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\APS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4259,8 +4259,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Core\\SchoolProject.Core.csproj": {
-              "projectPath": "E:\\My_GitHub\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Core\\SchoolProject.Core.csproj"
+            "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Core\\SchoolProject.Core.csproj": {
+              "projectPath": "E:\\My_GitHub\\tow project API and UI\\SchoolProjectApi-CleanArchitecture\\SchoolProject.API\\SchoolProject.Core\\SchoolProject.Core.csproj"
             }
           }
         }

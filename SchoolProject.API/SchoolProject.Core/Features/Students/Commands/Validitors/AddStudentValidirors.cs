@@ -28,10 +28,15 @@ namespace SchoolProject.Core.Features.Students.Commands.Validitors
 
         public void ApplyValidationRules()
         {
-            RuleFor(x => x.Name)
+            RuleFor(x => x.NameAr)
                 .NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
                 .NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
                 .MaximumLength(30).WithMessage(_localizer[SharedResourcesKeys.MaxLengthis100]);
+
+            RuleFor(x => x.NameEn)
+              .NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
+              .NotNull().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
+              .MaximumLength(30).WithMessage(_localizer[SharedResourcesKeys.MaxLengthis100]);
 
             RuleFor(x => x.Address)
              .NotEmpty().WithMessage(_localizer[SharedResourcesKeys.NotEmpty])
@@ -39,12 +44,19 @@ namespace SchoolProject.Core.Features.Students.Commands.Validitors
              .MaximumLength(10).WithMessage(_localizer[SharedResourcesKeys.MaxLengthis100]);
         }
 
+
+
         public void ApplyCustomValidationRules()
         {
-            RuleFor(x => x.Name)
-                .MustAsync(async (key, CancellationToken) => !await _studentService.IsNameExist(key))
-                .WithMessage(_localizer[SharedResourcesKeys.IsExist]);
+            RuleFor(x => x.NameAr)
+                .NotEmpty().WithMessage("اسم الطالب بالعربية مطلوب")
+                .MaximumLength(100).WithMessage("يجب أن لا يتجاوز طول الاسم 100 حرف");
+
+            RuleFor(x => x.NameEn)
+                .NotEmpty().WithMessage("اسم الطالب بالإنجليزية مطلوب")
+                .MaximumLength(100).WithMessage("يجب أن لا يتجاوز طول الاسم 100 حرف");
         }
+
         #endregion
     }
 }

@@ -19,15 +19,15 @@ namespace SchoolProject.Data.Entities
         [Key]
         public Guid StudID { get; set; }
         [StringLength(100)]
-        public string NameAr { get; set; }
+        public string NameAr { get; set; } = default!;
         [StringLength(100)]
-        public string NameEn { get; set; }
+        public string NameEn { get; set; } = default!;
 
         [StringLength(300)]
-        public string? Address { get; set; }
+        public string? Address { get; set; } = default!;
         [StringLength(100)]
-        public string? Phone { get; set; }
-        public Guid? DID { get; set; }
+        public string? Phone { get; set; } = default!;
+        public Guid? DID { get; set; } = default!;
         [ForeignKey("DID")]
         public virtual Department Department { get; set; }
     }

@@ -22,10 +22,14 @@ namespace SchoolProject.Service.Impelmantation
         #endregion
 
         #region Handel Functions
-        public async Task<List<Student>> GetStudentsLsitAsync()
+        public IQueryable<Student> GetStudentsLsitAsync()
         {
-            return await _studentRepository.GetStudentsListAsync();
+            return _studentRepository.GetStudentsListAsync();
         }
+        //public async Task<List<Student>> GetStudentsLsitAsync()
+        //{
+        //    return await _studentRepository.GetStudentsListAsync();
+        //}
 
         public async Task<Student> GetStudentByIdWithIncludAsync(Guid id)
         {

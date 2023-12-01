@@ -9,8 +9,8 @@ namespace SchoolProject.Core.Features.Mapping.StudentMapp
         {
             CreateMap<Student, GetStudentByIdResponse>()
                            // This fills the DepartmentName present in GetStudentListResponse with the data from virtual Department
-                           .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Department.DNameAr))
-                           .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Localize(src.NameAr, src.NameEn)));
+                           .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Department.DNameAr));
+            //.ForMember(dest => dest.NameAr, opt => opt.MapFrom(src => src.Localize(src.NameAr, src.NameEn)));
         }
     }
 }

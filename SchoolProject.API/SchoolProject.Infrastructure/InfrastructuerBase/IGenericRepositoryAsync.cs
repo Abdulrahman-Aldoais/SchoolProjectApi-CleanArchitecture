@@ -1,9 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore.Storage;
+﻿using Microsoft.AspNetCore.OData.Query;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace SchoolProject.Infrastructure.InfrastructuerBase
 {
     public interface IGenericRepositoryAsync<T> where T : class
     {
+        //TDTO MapEntityToDTOs<TEntity, TDTO>(TEntity entity);
+        //TEntity MapDTOsToEntity<TDTO, TEntity>(TDTO tdto);
+        Task<IQueryable<T>> GetStudentDynamicWithOdata(ODataQueryOptions<T> options);
         Task DeleteRangeAsync(ICollection<T> entities);
         Task<T> GetByIdAsync(Guid id);
         Task SaveChangesAsync();

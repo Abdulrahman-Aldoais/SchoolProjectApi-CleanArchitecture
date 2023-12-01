@@ -18,7 +18,7 @@ namespace SchoolProject.Infrastructure.Context
 
         public DbSet<Department> Departments { get; set; }
         public DbSet<DepartmetSubject> DepartmetSubjects { get; set; }
-        public DbSet<Student> Students { get; set; }
+        public DbSet<Student> Students { get; set; } = default!;
         public DbSet<StudentSubject> StudentSubjects { get; set; }
         public DbSet<Subject> Subjects { get; set; }
 

@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
-using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Bases;
 using SchoolProject.Core.Features.Students.Commands.Models;
-using SchoolProject.Core.Resources;
 using SchoolProject.Data.Entities;
 using SchoolProject.Service.Abstracts;
 
@@ -17,18 +15,18 @@ namespace SchoolProject.Core.Features.Students.Commands.Handlers
 
         #region Fields
         private readonly IStudentService _studentService;
+
         private readonly IMapper _mapper;
-        private readonly IStringLocalizer<SharedResources> _localizer;
+
         #endregion
 
         #region Constructors
         public StudentCommandHandler(IStudentService studentService,
-                                     IMapper mapper,
-                                     IStringLocalizer<SharedResources> localizer) : base(localizer)
+                                     IMapper mapper)
         {
             _studentService = studentService;
             _mapper = mapper;
-            _localizer = localizer;
+
         }
         #endregion
 
@@ -38,11 +36,9 @@ namespace SchoolProject.Core.Features.Students.Commands.Handlers
         {
             // mapping between requst and student
             var studntResult = _mapper.Map<Student>(request);
+
             // add
             var result = await _studentService.AddStudentAsync(studntResult);
-            //// check condation 
-            //if (result == "Exist") return UnprocessableEntity<string>("Name Is Exist");
-            // retutrn responst
             if (result == "Success") return Created("Added SuccessFully");
             else return BadRequest<string>("error not now");
         }
@@ -67,11 +63,11 @@ namespace SchoolProject.Core.Features.Students.Commands.Handlers
             //check if the student Exist or not
             var student = await _studentService.GetByIdAsync(request.Id);
             // return Not Fonde
-            if (student == null) return NotFound<string>("Student is Not found");
+            if (student == null) return NotFound<string>();
             // call function from service to delete this student
             var result = await _studentService.DeleteStudentAsync(student);
             //check return result 
-            if (result == "Success") return Deleted<string>($"Delete Success {request.Id}");
+            if (result == "Success") return Deleted<string>("Delete Success");
             else return BadRequest<string>();
 
         }

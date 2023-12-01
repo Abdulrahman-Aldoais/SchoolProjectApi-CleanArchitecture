@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 using SchoolProject.Core.Bases;
 using System.Net;
 
@@ -7,7 +8,7 @@ namespace SchoolProject.API.Base
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AppControllerBase : ControllerBase
+    public class AppControllerBase : ODataController
     {
         #region Fields
         private IMediator _mediatorInstance;

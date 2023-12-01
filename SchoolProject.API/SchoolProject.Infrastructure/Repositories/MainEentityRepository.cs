@@ -1,23 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SchoolProject.Infrastructure.Conste;
 using SchoolProject.Infrastructure.Context;
 using SchoolProject.Infrastructure.InfrastructuerBase;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolProject.Infrastructure.Repositories
 {
     public class MainEentityRepository<T> : IMainEentityRepository<T> where T : class
     {
         protected ApplicationDbContext _context;
+        private readonly IMapper _mapper;
 
-        public MainEentityRepository(ApplicationDbContext context)
+        public MainEentityRepository(ApplicationDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         public async Task<T> GetByIdAsync(int id)
         {
@@ -143,5 +141,7 @@ namespace SchoolProject.Infrastructure.Repositories
         {
             return await _context.Set<T>().CountAsync(filter);
         }
+
+
     }
 }

@@ -1,22 +1,29 @@
-using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using Microsoft.OData.Edm;
+using Microsoft.OData.ModelBuilder;
 using SchoolProject.Core;
+using SchoolProject.Core.Features.Students.Querise.Respons;
 using SchoolProject.Core.Middleware;
 using SchoolProject.Infrastructure;
 using SchoolProject.Infrastructure.Context;
 using SchoolProject.Service;
-using System.Globalization;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
 
+
+
+        var builder = WebApplication.CreateBuilder(args);
         #region Add services to the container.
-        builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+        builder.Services.AddControllers().AddOData(options =>
+        {
+            options.Select().Expand().Filter().OrderBy().SetMaxTop(null).Count();
+            options.AddRouteComponents("api", GetEdmModel());
+        });
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         #endregion
@@ -33,42 +40,20 @@ internal class Program
                         .AddServiceDependencies()
                         .AddCoreDependencies();
         #endregion
-        #region Localization
-        builder.Services.AddControllersWithViews();
-        builder.Services.AddLocalization(opt =>
-        {
-            opt.ResourcesPath = "";
-        });
 
-        builder.Services.Configure<RequestLocalizationOptions>(options =>
-        {
-            List<CultureInfo> supportedCultures = new List<CultureInfo>
-    {
-            new CultureInfo("en-US"),
-            new CultureInfo("de-DE"),
-            new CultureInfo("fr-FR"),
-            new CultureInfo("ar-EG")
-    };
-            options.DefaultRequestCulture = new RequestCulture("en-US");
-            options.SupportedCultures = supportedCultures;
-            options.SupportedUICultures = supportedCultures;
-        });
-
-        #endregion
 
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
+
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
-            app.UseSwaggerUI();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "SchoolProject.API v1");
+            });
         }
-
-        #region Localization Middleware
-        var options = app.Services.GetService<IOptions<RequestLocalizationOptions>>();
-        app.UseRequestLocalization(options.Value);
-        #endregion
 
         app.UseMiddleware<ErrorHandlerMiddleware>();
 
@@ -79,5 +64,13 @@ internal class Program
         app.MapControllers();
 
         app.Run();
+
+        static IEdmModel GetEdmModel()
+        {
+            ODataConventionModelBuilder builder = new();
+            builder.EntitySet<GetStudentListRespons>("GetStudentListRespons");
+            return builder.GetEdmModel();
+        }
+
     }
 }

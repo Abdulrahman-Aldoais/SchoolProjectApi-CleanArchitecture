@@ -5,7 +5,8 @@ namespace SchoolProject.Service.Abstracts
 {
     public interface IStudentService
     {
-        public Task<List<Student>> GetStudentsLsitAsync();
+
+        public IQueryable<Student> GetStudentsLsitAsync();
         public Task<Student> GetStudentByIdWithIncludAsync(Guid id);
         public Task<Student> GetByIdAsync(Guid id);
         public Task<string> AddStudentAsync(Student student);

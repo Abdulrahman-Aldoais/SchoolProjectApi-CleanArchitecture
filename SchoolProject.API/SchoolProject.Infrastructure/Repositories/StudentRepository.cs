@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entities;
 using SchoolProject.Infrastructure.Abstracts;
 using SchoolProject.Infrastructure.Context;
@@ -18,17 +19,19 @@ namespace SchoolProject.Infrastructure.Repositories
         #endregion
 
         #region Constructors
-        public StudentRepository(ApplicationDbContext context) : base(context)
+        public StudentRepository(ApplicationDbContext context, IMapper mapper) : base(context, mapper)
         {
             _studentRepository = context.Set<Student>();
+
         }
 
         #endregion
 
         #region Handles Function
-        public async Task<List<Student>> GetStudentsListAsync()
+        public IQueryable<Student> GetStudentsListAsync()
         {
-            return await _studentRepository.Include(dep => dep.Department).ToListAsync();
+
+            return _studentRepository.Include(dep => dep.Department).AsQueryable();
         }
         #endregion
 

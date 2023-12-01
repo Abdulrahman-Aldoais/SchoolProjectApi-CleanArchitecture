@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Localization;
-using SchoolProject.Core.Resources;
+﻿using SchoolProject.Core.Resources;
 
 namespace SchoolProject.Core.Bases
 {
@@ -7,11 +6,8 @@ namespace SchoolProject.Core.Bases
 
     public class ResponseHandler
     {
-        private readonly IStringLocalizer<SharedResources> _localizer;
-        public ResponseHandler(IStringLocalizer<SharedResources> localizer)
-        {
-            _localizer = localizer;
-        }
+
+
         public Response<T> Deleted<T>(string Message = null)
         {
             return new Response<T>()
@@ -19,7 +15,7 @@ namespace SchoolProject.Core.Bases
                 StatusCode = System.Net.HttpStatusCode.OK,
                 Succeeded = true,
                 //Message = "Deleted Successfully"
-                Message = Message == null ? _localizer[SharedResourcesKeys.Deleted] : Message
+                Message = Message == null ? SharedResourcesKeys.Deleted : Message
             };
         }
         public Response<T> Success<T>(T entity, object Meta = null)
@@ -29,7 +25,7 @@ namespace SchoolProject.Core.Bases
                 Data = entity,
                 StatusCode = System.Net.HttpStatusCode.OK,
                 Succeeded = true,
-                Message = _localizer[SharedResourcesKeys.Success],
+                Message = SharedResourcesKeys.Success,
                 Meta = Meta
             };
         }
@@ -39,7 +35,7 @@ namespace SchoolProject.Core.Bases
             {
                 StatusCode = System.Net.HttpStatusCode.Unauthorized,
                 Succeeded = true,
-                Message = _localizer[SharedResourcesKeys.UnAuthorized]
+                Message = SharedResourcesKeys.UnAuthorized
             };
         }
         public Response<T> BadRequest<T>(string Message = null)
@@ -48,7 +44,7 @@ namespace SchoolProject.Core.Bases
             {
                 StatusCode = System.Net.HttpStatusCode.BadRequest,
                 Succeeded = false,
-                Message = Message == null ? _localizer[SharedResourcesKeys.BadRequest] : Message
+                Message = Message == null ? SharedResourcesKeys.BadRequest : Message
             };
         }
 
@@ -58,7 +54,7 @@ namespace SchoolProject.Core.Bases
             {
                 StatusCode = System.Net.HttpStatusCode.UnprocessableEntity,
                 Succeeded = false,
-                Message = Message == null ? _localizer[SharedResourcesKeys.UnprocessableEntity] : Message
+                Message = Message == null ? SharedResourcesKeys.UnprocessableEntity : Message
             };
         }
 
@@ -68,7 +64,7 @@ namespace SchoolProject.Core.Bases
             {
                 StatusCode = System.Net.HttpStatusCode.NotFound,
                 Succeeded = false,
-                Message = message == null ? _localizer[SharedResourcesKeys.NotFound] : message
+                Message = message == null ? SharedResourcesKeys.NotFound : message
             };
         }
 
@@ -79,7 +75,7 @@ namespace SchoolProject.Core.Bases
                 Data = entity,
                 StatusCode = System.Net.HttpStatusCode.Created,
                 Succeeded = true,
-                Message = _localizer[SharedResourcesKeys.Created],
+                Message = SharedResourcesKeys.Created,
                 Meta = Meta
             };
         }

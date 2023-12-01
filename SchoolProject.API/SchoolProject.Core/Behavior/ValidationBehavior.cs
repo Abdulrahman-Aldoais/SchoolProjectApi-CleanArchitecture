@@ -1,7 +1,5 @@
 ﻿using FluentValidation;
 using MediatR;
-using Microsoft.Extensions.Localization;
-using SchoolProject.Core.Resources;
 
 namespace SchoolProject.Core.Behavior
 {
@@ -9,31 +7,13 @@ namespace SchoolProject.Core.Behavior
         where TRequest : IRequest<TResponse>
     {
         private readonly IEnumerable<IValidator<TRequest>> _validators;
-        private readonly IStringLocalizer<SharedResources> _localizer;
-        public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators, IStringLocalizer<SharedResources> localizer)
+
+        public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators)
         {
             _validators = validators;
-            _localizer = localizer;
+
         }
 
-        //public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
-        //{
-        //    if (_validators.Any())
-        //    {
-        //        var context = new ValidationContext<TRequest>(request);
-        //        var validationResults = await Task.WhenAll(_validators.Select(v => v.ValidateAsync(context, cancellationToken)));
-        //        var failures = validationResults.SelectMany(r => r.Errors).Where(f => f != null).ToList();
-
-        //        if (failures.Count != 0)
-        //        {
-        //            var message = failures.Select(x => x.PropertyName + ": " + x.ErrorMessage).FirstOrDefault();
-
-        //            throw new ValidationException(message);
-
-        //        }
-        //    }
-        //    return await next();
-        //}
 
         public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
         {
@@ -45,7 +25,7 @@ namespace SchoolProject.Core.Behavior
 
                 if (failures.Count != 0)
                 {
-                    var message = failures.Select(x => _localizer[$"{x.PropertyName}"] + " : " + _localizer[x.ErrorMessage]).FirstOrDefault();
+                    var message = failures.Select(x => $"{x.PropertyName}" + " : " + x.ErrorMessage).FirstOrDefault();
 
                     throw new ValidationException(message);
 

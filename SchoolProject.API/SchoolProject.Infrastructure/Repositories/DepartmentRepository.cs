@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entities;
 using SchoolProject.Infrastructure.Abstracts;
 using SchoolProject.Infrastructure.Context;
@@ -12,11 +13,11 @@ namespace SchoolProject.Infrastructure.Repositories
 
 
         #region Constructors
-        public DepartmentRepository(ApplicationDbContext context) : base(context)
+
+        public DepartmentRepository(ApplicationDbContext context, IMapper mapper) : base(context, mapper)
         {
             _departmentRepository = context.Set<Department>();
         }
-
         #endregion
         public async Task<List<Department>> GetDepartmentListAsync()
         {

@@ -6,5 +6,6 @@ namespace SchoolProject.Core.Features.Depatrment.Querise.Models
 {
     public class GetDepartmentListQuery : IRequest<Response<List<GetDepartmentListRespons>>>
     {
+
     }
 }
